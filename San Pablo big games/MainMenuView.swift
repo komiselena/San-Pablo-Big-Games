@@ -54,7 +54,7 @@ struct MainMenuView: View {
                                                 .font(.largeTitle.weight(.bold))
                                             Spacer()
                                         }
-                                        .frame(width: g.size.width * 0.3, height: g.size.height * 0.2)
+                                        .frame(width: g.size.width * 0.3, height: g.size.height * (UIDevice.current.userInterfaceIdiom == .pad ? 0.15 : 0.2))
 
 
                                     }
@@ -104,11 +104,10 @@ struct MainMenuView: View {
                                 }
 
                             }
-                            .frame(width: g.size.width * 0.6, height: g.size.height * 0.9)
-                            
+                            .frame(width: g.size.width * (UIDevice.current.userInterfaceIdiom == .pad ? 0.5 : 0.6), height: g.size.height * 0.9)
+
                             Spacer()
                                 .frame(width: g.size.width * 0.3, height: g.size.height * 0.9)
-
 
                             VStack{
                                 ZStack {
@@ -140,11 +139,11 @@ struct MainMenuView: View {
                                 }
 
                             }
-                            .frame(width: g.size.width * 0.3, height: g.size.height * 0.9)
 
+                            .frame(width: g.size.width * (UIDevice.current.userInterfaceIdiom == .pad ? 0.2 : 0.3), height: g.size.height * 0.9)
 
                         }
-                        .frame(width: g.size.width * 0.5, height: g.size.height * 0.9)
+                        .frame(width: g.size.width * 0.9, height: g.size.height * 0.9)
 
                     }
                     .frame(width: g.size.width, height: g.size.height)

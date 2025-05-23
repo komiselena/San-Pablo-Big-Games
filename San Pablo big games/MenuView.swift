@@ -62,17 +62,17 @@ struct GameModeSelectionView: View {
                                 Image("image")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: g.size.width * 0.37, height: g.size.height * 0.3)
+                                    .frame(width: g.size.width * 0.33, height: g.size.height * 0.3)
                                 VStack{
                                     Text("UPGRADES")
                                         .foregroundStyle(.white)
                                         .font(.title2.weight(.bold))
                                     Spacer()
                                 }
-                                .frame(width: g.size.width * 0.28, height: g.size.height * 0.2)
+                                .frame(width: g.size.width * 0.28, height: g.size.height * (UIDevice.current.userInterfaceIdiom == .pad ? 0.15 : 0.2))
 
                             }
-                            .frame(width: g.size.width * 0.37, height: g.size.height * 0.3)
+                            .frame(width: g.size.width * 0.33, height: g.size.height * 0.3)
 
                         }
                         NavigationLink {
@@ -82,17 +82,17 @@ struct GameModeSelectionView: View {
                                 Image("image")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: g.size.width * 0.37, height: g.size.height * 0.3)
+                                    .frame(width: g.size.width * 0.33, height: g.size.height * 0.3)
                                 VStack{
                                     Text("TOURNAMENT")
                                         .foregroundStyle(.white)
                                         .font(.title2.weight(.bold))
                                     Spacer()
                                 }
-                                .frame(width: g.size.width * 0.28, height: g.size.height * 0.2)
+                                .frame(width: g.size.width * 0.28, height: g.size.height * (UIDevice.current.userInterfaceIdiom == .pad ? 0.15 : 0.2))
 
                             }
-                            .frame(width: g.size.width * 0.37, height: g.size.height * 0.3)
+                            .frame(width: g.size.width * 0.33, height: g.size.height * 0.3)
 
                         }
                         .disabled(gameState.coins < 100)
@@ -104,17 +104,17 @@ struct GameModeSelectionView: View {
                                 Image("image")
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: g.size.width * 0.37, height: g.size.height * 0.3)
+                                    .frame(width: g.size.width * 0.33, height: g.size.height * 0.3)
                                 VStack{
                                     Text("TRAINING")
                                         .foregroundStyle(.white)
                                         .font(.title2.weight(.bold))
                                     Spacer()
                                 }
-                                .frame(width: g.size.width * 0.28, height: g.size.height * 0.2)
+                                .frame(width: g.size.width * 0.28, height: g.size.height * (UIDevice.current.userInterfaceIdiom == .pad ? 0.15 : 0.2))
 
                             }
-                            .frame(width: g.size.width * 0.37, height: g.size.height * 0.3)
+                            .frame(width: g.size.width * 0.33, height: g.size.height * 0.3)
 
                         }
                         

@@ -55,7 +55,7 @@ struct MiniGamesView: View {
                         Image("group")
                             .resizable()
                             .scaledToFill()
-                            .frame(width: UIDevice.current.userInterfaceIdiom == .pad ? g.size.width * 0.9 : g.size.width * 0.99, height: UIDevice.current.userInterfaceIdiom == .pad ? 0.7 : g.size.height * 0.8)
+                            .frame(width: UIDevice.current.userInterfaceIdiom == .pad ? g.size.width * 0.9 : g.size.width * 0.99, height: UIDevice.current.userInterfaceIdiom == .pad ? g.size.height * 0.6 : g.size.height * 0.8)
                         HStack{
                             VStack(spacing: 10){
                                 NavigationLink {
@@ -65,7 +65,7 @@ struct MiniGamesView: View {
                                         Image("image")
                                             .resizable()
                                             .scaledToFit()
-                                            .frame(width: g.size.width * 0.25, height: g.size.height * 0.21)
+                                            .frame(width: g.size.width * (UIDevice.current.userInterfaceIdiom == .pad ? 0.2 : 0.25), height: g.size.height * (UIDevice.current.userInterfaceIdiom == .pad ? 0.18 : 0.21))
                                         VStack{
                                             Text("Guess The \nnumber")
                                                 .textCase(.uppercase)
@@ -73,10 +73,10 @@ struct MiniGamesView: View {
                                                 .font(.headline.weight(.bold))
                                             Spacer()
                                         }
-                                        .frame(width: g.size.width * 0.23, height: g.size.height * 0.18)
+                                        .frame(height: g.size.height * (UIDevice.current.userInterfaceIdiom == .pad ? 0.1 : 0.18))
 
                                     }
-                                    .frame(width: g.size.width * 0.25, height: g.size.height * 0.23)
+                                    .frame(width: g.size.width * (UIDevice.current.userInterfaceIdiom == .pad ? 0.2 : 0.25), height: g.size.height * (UIDevice.current.userInterfaceIdiom == .pad ? 0.18 : 0.21))
 
                                 }
 
@@ -87,17 +87,17 @@ struct MiniGamesView: View {
                                         Image("image")
                                             .resizable()
                                             .scaledToFit()
-                                            .frame(width: g.size.width * 0.25, height: g.size.height * 0.21)
+                                            .frame(width: g.size.width * (UIDevice.current.userInterfaceIdiom == .pad ? 0.2 : 0.25), height: g.size.height * (UIDevice.current.userInterfaceIdiom == .pad ? 0.18 : 0.21))
                                         VStack{
                                             Text("REPEAT THE \nSEQUENCE")
                                                 .foregroundStyle(.white)
                                                 .font(.headline.weight(.bold))
                                             Spacer()
                                         }
-                                        .frame(width: g.size.width * 0.23, height: g.size.height * 0.18)
+                                        .frame(height: g.size.height * (UIDevice.current.userInterfaceIdiom == .pad ? 0.1 : 0.18))
 
                                     }
-                                    .frame(width: g.size.width * 0.25, height: g.size.height * 0.23)
+                                    .frame(width: g.size.width * (UIDevice.current.userInterfaceIdiom == .pad ? 0.2 : 0.25), height: g.size.height * (UIDevice.current.userInterfaceIdiom == .pad ? 0.18 : 0.21))
 
                                 }
 
@@ -111,17 +111,17 @@ struct MiniGamesView: View {
                                         Image("image")
                                             .resizable()
                                             .scaledToFit()
-                                            .frame(width: g.size.width * 0.25, height: g.size.height * 0.21)
+                                            .frame(width: g.size.width * (UIDevice.current.userInterfaceIdiom == .pad ? 0.2 : 0.25), height: g.size.height * (UIDevice.current.userInterfaceIdiom == .pad ? 0.18 : 0.21))
                                         VStack{
                                             Text("FIND A \nMATCH")
                                                 .foregroundStyle(.white)
                                                 .font(.headline.weight(.bold))
                                             Spacer()
                                         }
-                                        .frame(width: g.size.width * 0.23, height: g.size.height * 0.18)
+                                        .frame(height: g.size.height * (UIDevice.current.userInterfaceIdiom == .pad ? 0.1 : 0.18))
 
                                     }
-                                    .frame(width: g.size.width * 0.25, height: g.size.height * 0.23)
+                                    .frame(width: g.size.width * (UIDevice.current.userInterfaceIdiom == .pad ? 0.2 : 0.25), height: g.size.height * (UIDevice.current.userInterfaceIdiom == .pad ? 0.18 : 0.21))
 
                                 }
 
@@ -134,24 +134,24 @@ struct MiniGamesView: View {
                                         Image("image")
                                             .resizable()
                                             .scaledToFit()
-                                            .frame(width: g.size.width * 0.25, height: g.size.height * 0.21)
+                                            .frame(width: g.size.width * (UIDevice.current.userInterfaceIdiom == .pad ? 0.2 : 0.25), height: g.size.height * (UIDevice.current.userInterfaceIdiom == .pad ? 0.18 : 0.21))
                                         VStack{
                                             Text("FIND WAY TO \nTHE CUP")
                                                 .foregroundStyle(.white)
                                                 .font(.headline.weight(.bold))
                                             Spacer()
                                         }
-                                        .frame(width: g.size.width * 0.23, height: g.size.height * 0.18)
+                                        .frame(height: g.size.height * (UIDevice.current.userInterfaceIdiom == .pad ? 0.1 : 0.18))
 
                                     }
-                                    .frame(width: g.size.width * 0.25, height: g.size.height * 0.23)
+                                    .frame(width: g.size.width * (UIDevice.current.userInterfaceIdiom == .pad ? 0.2 : 0.25), height: g.size.height * (UIDevice.current.userInterfaceIdiom == .pad ? 0.18 : 0.21))
 
                                 }
 
 
                             }
                         }
-                        .padding(.top, g.size.width * 0.15)
+                        .padding(.top, g.size.width * (UIDevice.current.userInterfaceIdiom == .pad ? 0.12 : 0.15))
                         .frame(width: g.size.width * 0.6, height: g.size.height * 0.6)
                     }
 
